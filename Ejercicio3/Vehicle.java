@@ -1,23 +1,16 @@
 public class Vehicle {
-	public static final Integer BASIC = 0;
-	public static final Integer MIG = 1;
-	public static final Integer PREMIUM = 2;
+	public static final String BASIC = "basic";
+	public static final String GENERAL = "general";
+	public static final String LUXE = "luxe";
 	
 	private String model;
 	private String marca;
 	private String categoria;
-	private Integer tipo;
-	
+
 	public Vehicle(String marca, String model, String categoria) {
 		this.setMarca(marca);
 		this.setModel(model);
 		this.setCategoria(categoria);
-	}
-
-	public Vehicle(String marca, String model, Integer tipo) {
-		this.setMarca(marca);
-		this.setModel(model);
-		this.setTipo(tipo);
 	}
 
 	public String getMarca() {
@@ -42,13 +35,5 @@ public class Vehicle {
 
 	public void setCategoria(String categoria) {
 		this.categoria = categoria;
-	}
-
-	public Integer getTipo() {
-		return tipo;
-	}
-
-	public void setTipo(Integer tipo) {
-		this.tipo = tipo;
 	}
 }
